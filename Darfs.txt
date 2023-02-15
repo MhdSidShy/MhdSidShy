@@ -1,0 +1,6533 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>CSS P.1</title>
+           <link rel="stylesheet" href="index04.07.css"  
+    </head>
+
+    <body> <p id="container">id "container"</p>
+           <P class="leftColumn">Class "leftColumn"</P>
+           <div> div element</div>
+
+           <p id="container" class="leftColumn">div with id and Class</p>
+           <div class="leftColumn"> div with id and Class 02</div>
+
+    </body>
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+    <head> <meta charset="utf-8">
+           <title></title>
+           <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+   
+    <body> <h3>CSS Selector Activity</h3>
+           <div>This division should have bold text. You can find <span>blue text</span> and <span>red text</span> in this paragraph.</div>
+           <br/>
+           <div>This division also contains colors. Here you will find <span>magenta text</span> and <span>green text</span>, instead of <span>blue text</span> and <span>red text</span>.</div>
+    </body>
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+    <head> <title>CSS P.1</title>
+           <link rel="stylesheet" href="index04.07.css"  
+    </head>
+   
+    <body> <h3>CSS Selector Activity</h3>
+           <div class="first">This division should have bold text. You can find <span id="colorBlue">blue text</span> and <span id="colorRed">red text</span> in this paragraph.</div>
+           <br/>
+           <div class="second">This division also contains colors. Here you will find <span id="coloeMagenta">magenta text</span> and <span id="colorGreen">green text</span>, instead of <span id="colorBlue">blue text</span> and <span id="colorRed">red text</span>.</div>
+    </body>
+    </html>
+
+.first {font-weight: bold ;}
+.second {font-size: 1.5em;}
+#colorBlue {color: blue;}
+#colorRed {color: red;}
+#coloeMagenta {color: magenta;}
+#colorGreen {color: green;}
+
+// __________
+
+<!DOCTYPE html>
+<html>
+    <head> <title>CSS P.1</title>
+           <link rel="stylesheet" type="text/css" href="index04.07.css"  
+    </head>
+   
+    <body><a id="topic-link" href="Google.com">Google Link!</a>
+          <ul class="header"><li>1/</li>
+                             <li>2/</li>
+                             <li>3/</li>
+                             <li>4/</li>
+          </ul>
+    </body>
+</html>
+
+#topic-link {color: red;}
+#topic-link:visited {color: magenta;}
+#topic-link:hover {color: orange;}
+.header :first-child {color: yellow;
+                      font-size: larger;}
+.header :nth-child(odd) {color: orchid;
+                      font-size: 45px;}
+
+// __________
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+------------
+
+<!DOCTYPE html>
+<html>
+ <head><title>CSS P.2</title>
+      <link href="https:// fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+      <link rel="stylesheet" href="index04.07.css">
+ </head>
+
+ <body><nav><ul><li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+       </nav>
+
+       <p>1 Das hat es in der Waitzstraße schon mehrfach gegeben: Plötzlich rast ein Wagen über den Gehweg und kracht in ein Schaufenster. Auffallend oft haben Seniorinnen und Senioren in der Waitzstraße Gas- und Bremspedal miteinander verwechselt. Erst kurz vor Weihnachten ist das wieder passiert, als ein 77-jähriger Mann statt rückwärts zu fahren nach vorne schoss, dabei einen Hunderte Kilo schweren Betonpoller mitnahm und erst kurz vor dem Schaufenster eines Cafés zum Stehen kam. Stefanie von Berg sieht ältere Menschen daher als Risikogruppe im Straßenverkehr und fordert deshalb auf Nachfrage von NDR 90,3 regelmäßige Gesundheits-Checks für Fahrerinnen und Fahrer im höheren Alter.</p>
+
+       <div>2 Eine Test-Pflicht wäre unfair, meint dagegegn der Allgemeine Deutsche Automobil-Club (ADAC). Auch im hohen Alter seien viele Menschen noch fit am Steuer. Der ADAC bietet in Hamburg aber freiwillige Fahrstunden und einen sogenannten Fahr-Fitness-Check für ältere Menschen an. Während der 45-minütigen Fahrt überprüft ein Fahrlehrer oder eine Fahrlehrerin die Aufmerksamkeit der Teilnehmenden. Die Testergebnisse werden nicht an die Behörden weitergegeben. Mehr als 100 Seniorinnen und Senioren jährlich nutzen das Angebot. Darüber hinaus gibt es auch auf hamburg.de Informationen zu Veranstaltungen und Verkehrs-Fitness-Checks.</div>    
+
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+
+<html>
+ <head><meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+ <body>
+  <div>I have so much left to learn!</div>
+  <form action="https:// formspree.io/your@email.com" method="POST">
+  <br>
+
+       <label for="firstName">First Name:</label>
+       <input id="firstName" type="text" placeholder="First Name">
+       <br>
+
+       <label for="lastName">Last Name:</label>
+       <input id="lastName" type="text" placeholder="Last Name">
+       <br>
+      
+       <label for="email">First Name:</label>
+       <input id="email" type="email" placeholder="Email Address">
+       <br>
+      
+       <label for="iceCream">Are you a cat or dog person?</label>
+       <br>
+       <input type="radio" name="iceCream" value="cat" checked>Cat
+       <br>
+       <input type="radio" name="iceCream" value="dog">Dog
+       <br>
+       <input type="radio" name="iceCream" value="other">Other
+       <br>
+      
+       <input type="submit" value="Send">
+  </form>
+ 
+  <a href="www.google.com">Click Me!</a>
+
+ </body>
+</html>
+
+p {width: 200px;
+   padding: 25px;
+   float: left}
+
+div {width: 200px;
+     padding: 25px;
+     float: right}
+
+nav {position:re;
+     top: 0633px;}
+
+div {padding: 15px 20px 25px 30px;
+     background-color: #B633FF;}
+
+form {border: solid 5px black;
+      float: right;
+      padding: 75px;
+     margin-right: 60px;
+      margin-bottom: 15px;}
+
+a:hover {color: #00e1ff ;}
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body><script src="index.js"></script>
+ </body>
+
+</html>
+
+alert("Hello 2 World!")
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><meta charset="utf-8"><title></title></head>
+
+ <body>
+   <script src="script.js">// Comment: A Alert here</script>
+ </body>
+</html>
+
+alert("Welcome to my page")
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body><script src="index.js"></script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><meta charset="utf-8"><title></title></head>
+
+ <body><script src="script.js"></script>
+
+ </body>
+</html>
+
+// String
+"I am a sentence and in JavaScript, I am called a String"
+
+// Number
+24
+
+// Boolean
+true
+
+var excited = "I am so excited to be learning about JavaScript!"
+
+var puppy;
+
+// later on in this code, you can set puppy to some data
+puppy = "Spot";
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body><script> var excited = "I am so excited to be learning about JavaScript!"
+                var puppy;
+                // later on in this code, you can set puppy to some data
+                puppy = "Spot";
+
+ </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body><script>
+    var name = "Jennifer";
+    var age = "24";
+
+   
+    var join = name + age;
+    console.log(join);
+    // the value of join will be "Jennifer24"
+
+    var a = 2;
+    var b = 3;
+
+    var c = a + b; // c = 5
+    var d = a - b; // d = -1
+    var e = a * b; // e = 6
+    var f = e / a; // f = 3
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    console.log(f);
+
+    var myVar = '5' + '5'
+    console.log(myVar)
+
+    var isTrue = false;
+    console.log(isTrue);
+//  the value of isTrue is false
+
+ </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body><script src="index.js"></script>
+ </body>
+
+</html>
+
+var myFavoriteNumber  = "07"
+console.log(myFavoriteNumber);
+
+var myFavoritePet = "Becky"
+console.log(myFavoritePet);
+
+var rainIsLovely = true
+console.log(rainIsLovely);
+
+var numberOne  = 24
+console.log(numberOne);
+
+var numberTwo  = 57
+console.log(numberTwo);
+
+var addNumbers  = numberOne + numberTwo
+console.log(addNumbers);
+
+var divideNumbers  = numberOne / numberTwo
+console.log(divideNumbers);
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body><script>var puppy = true;
+               if (puppy){alert ("That puppy is so cute!");}
+    </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body>
+    <script>
+    var puppy = "Spot";
+    if (puppy === "Spot"){alert ("Hi 001!");}
+    </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body>
+    <script>
+    var age = 26;
+    if (age <= 30){alert ("U'ren't THAT old!");}
+    </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body>
+    <script>
+var puppy = "Nermal";
+if (puppy === "Spot"){alert("Hi Spot! You are so cute!");}
+else                 {alert("That's not Spot. Is that a cat??");}
+    </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body>
+    <script>
+var puppy = "Gar";
+     if (puppy === "Spot")  {alert("Hi Spot! You are so cute!");}
+else if (puppy === "Lassie"){alert("That's not Spot, that's Lassie!!");}
+else                        {alert("That's not Spot or Lassie. Is that a cat??");}
+
+    </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head><title>JavasScript 01</title></head>
+
+ <body>
+    <script>
+var puppy = "Spot";
+var cat = "Mittens";
+
+if (puppy === "Spot") {alert("Hi Spot! You are so cute!");}
+if (cat === "Mittens"){alert("Meow to you, Mittens!");}
+
+    </script>
+ </body>
+
+</html>
+
+// __________
+
+<!DOCTYPE html>
+
+<html>
+ <head><meta charset="utf-8">
+       <title></title>
+
+ </head>
+
+ <body>
+  <script src="script.js"></script>
+ </body>
+
+</html>
+
+var inputGrade = prompt("Enter a grade:");
+
+var numberGrade = parseInt(inputGrade);
+
+var letterGrade;
+
+//  Add your code below
+
+if (numberGrade >= 90){alert ("A");}
+
+else if (numberGrade >= 80){alert ("B");}
+
+else if (numberGrade >= 70){alert ("C");}
+
+else if (numberGrade >= 60){alert ("E");}
+
+else {alert("F");}
+
+// __________
+
+<script>
+   var color1 = "yellow";
+   var color2 = "blue";
+   var color3 = "red";
+
+   var colors = ["yellow","blue","red"];
+   var numbers = [1, 2, 3];
+   var myArray = [5, "Hello!", true, [1, "Bye!", false]];
+
+  </script>
+
+// __________
+
+<script>
+   var colors = ["yellow","blue","red"];
+   console.log(colors.length);
+
+   colors.sort();
+   console.log(colors);
+
+   colors.push("purple");
+   console.log(colors);
+
+   colors.pop();
+   console.log(colors);
+
+  </script>
+
+// __________
+
+<script>
+        var vehicle = {make: "Toyota",
+                       model: "Tacoma",
+                       weightInPounds: 3980,
+                       color: "Red",
+                       numberOfDoors: 4,
+                       fourWheelDrive: true}
+
+        console.log(vehicle.make);
+        console.log(vehicle.model);
+        console.log(vehicle.weightInPounds);
+        console.log(vehicle.color);
+        console.log(vehicle.numberOfDoors);
+        console.log(vehicle.fourWheelDrive);
+
+        var vehicle = ["Toyota", "Tacoma", 3980, "Red", 4, true];
+        console.log(vehicle);
+    </script>
+
+// __________
+
+<script>
+        var i = 0;
+        while (i < 4){console.log("i value:" + i); i = i + 1;};
+
+        while (i < 4){console.log("i value:" + i); i++;};
+    </script>
+
+// __________
+
+<script>
+     var cupsOfFlourCalledFor = 4;
+    
+     for (var i = 0; i < cupsOfFlourCalledFor; i++)
+         {console.log ("There are currently" + i + "cups of flour in the bowl.");}
+    
+     alert("The bowl has all the flour it needs!");
+    
+    </script>
+
+// __________
+
+    <script>
+     var myArray = [3, 5, 9, 11, 18];
+     console.log(myArray[0]);
+     console.log(myArray[1]);
+     console.log(myArray[2]);
+     console.log(myArray[3]);
+     console.log(myArray[4]);
+
+     for (var i=0; i<myArray.length;i++) {  if (myArray[i]>10) {console.log("The value " + myArray[i] + " is double digits!");}
+                                          else                 {console.log("The value " + myArray[i] + " is single digits!");}  }
+
+    </script>
+
+// __________
+
+var amazingCars = ["Lexus", "BMW", "Ford", "Mercedes"];
+console.log(amazingCars);
+
+amazingCars.sort();
+console.log(amazingCars);
+
+amazingCars.pop();
+console.log(amazingCars);
+
+amazingCars.sort();
+console.log(amazingCars);
+
+amazingCars
+console.log(amazingCars.length);
+
+// __________
+
+    <script>
+     var awesomeBirds = ["Bluebird", "Roadrunner", "Desert Dove", "Pigeon"]
+
+     for (var i=0; i<awesomeBirds.length; i++) {  if (awesomeBirds[i] === "Bluebird") {alert ("Bluebirds are so beautiful");}
+                                   else                    {alert ("Not as beautiful as Bluebirds");} }
+    
+    </script>
+
+// __________
+
+    <script>
+     function multiplyTwos(A, B) {var result = A * B; return result;}
+     var multiplyResult = multiplyTwos(5, 8);
+     console.log(multiplyResult);
+    </script>
+
+// __________
+
+    <script>
+     function calculateNumbers ()
+      {var No1 = 10;
+       var No2 = 3;
+       var No3 = No1 + No2;
+     
+       if (No3 >=10) {alert("Big No");}
+       else          {alert("Small No");}  }
+      
+       calculateNumbers ()
+    </script>
+
+// __________
+
+    <script>
+     function loopingThroughArray (nameArray)
+      {for (var i = 0; i < nameArray.length; i++)
+       {console.log ("I admire " + nameArray[i]);} }
+
+       var names = ["Jac.", "Hun.", "Jo.", "Pau."];
+        loopingThroughArray(names);
+
+    </script>
+
+// __________
+
+    <script>
+     function loopingThroughArray ()
+      { var nameArray = ["Jaci", "Huni", "Joi", "Paui", "Max", "Ali"];
+  
+        for (var i = 0; i < nameArray.length; i++)
+            {if      (nameArray[i] === "Jaci")
+                     {console.log("Ja. is my Bro");}
+
+             else if (nameArray[i] === "Huni")
+                      {console.log("H. is Friend");}
+
+             else if (nameArray[i] === "Joi")
+                      {console.log("Jo. is coWorker");}
+
+             else if (nameArray[i] === "Paui")
+                      {console.log("Never met P.");} }
+
+            return "Done loopind the nameArray!"; }
+
+     var result = loopingThroughArray(); alert(result);
+    
+    </script>
+
+// __________
+
+ <body>
+    <script>
+     function addStrings (srting1, string2)
+      {return srting1 + string2;}
+     var mySrting = addStrings("Jo ", "Smi ");
+      console.log (mySrting);
+
+     function addNos ()
+      {alert(2+3);}
+    </script>
+   
+    <button onclick="addNos ()">Add!</button>
+
+ </body>
+
+// __________
+
+    <script>
+     var myAge = 26
+      console.log (myAge)
+
+     function myAgeAfter20 () {return myAge + 20;}
+      console.log (myAgeAfter20());
+
+     function myAgeBefore10 () {return myAge - 10;}
+      console.log (myAgeBefore10());
+
+    </script>
+
+// __________
+
+     var myValue = 10;
+
+     function doIt()
+      {myValue = 9;}
+     
+     console.log (doIt());
+
+// __________
+
+     var myNumber = 5;
+    
+     function doSomething()
+      {var myNumber = 3;
+       return myNumber;}
+      
+      doSomething();
+       console.log(myNumber);
+
+// __________
+
+    <script>
+     function numberCalculation ()
+      {var number1 = 45;
+       var number2 = 78;
+       var multiplyNumbers = number1 * number2
+        console.log(multiplyNumbers);
+     
+      if    (multiplyNumbers <2000) {alert ("I wish it was a bigger number");}
+      else                         {alert ("That's more like it!");} }
+
+      numberCalculation()
+
+    </script>
+
+// __________
+
+ <body>
+  <button id="sumbitButton">Sumbit!</button>
+
+  <ul>
+       <li>Apple</li>
+       <li>Banana</li>
+       <li>Oranges</li>
+  </ul>
+
+  <p class="paragraph">A paragtaph.</p>
+
+  <script>
+   var myButton = document.getElementById("sumbitButton");
+    console.log(myButton);
+
+   var fruit = document.getElementsByTagName("li");
+    console.log(fruit);
+
+   var text = document.getElementsByClassName("paragraph");
+    console.log(text);
+  </script>
+
+</body>
+
+// __________
+
+ <body>
+  <input id="firstName" type="text" />
+  <input id="lastName"  type="text" />
+  <input id="eMail"     type="text" />
+  <input id="Age"       type="text" />
+
+  <button onclick="getValues ()"> Get Values </button>
+ 
+  <script>
+   function getValues()
+    {var firstName=          document.getElementById("firstName").value;
+      console.log("First Name: " + firstName);
+
+     var  lastName=          document.getElementById("lastName").value;
+      console.log("Last Name:  " + lastName);
+
+     var     eMail=          document.getElementById("eMail").value;
+      console.log("E-Mail: " + eMail);
+
+     var       Age= parseInt(document.getElementById("Age").value);
+      console.log("Age: " + Age)
+      console.log("After 20 Years: " + (Age+20));    }
+  </script>
+ </body>
+
+// __________
+
+<body>
+  <p id="paragraph ">A paragraph</p>
+
+  <script> var text= document.getElementById("paragraph ").innerHTML;
+            console.log(text);
+          
+            document.getElementById("paragraph ").innerHTML= text + " Awesome!";
+           
+
+  </script>
+ 
+ </body>
+
+// __________
+
+  <button onclick="handleClick ()"> Click!</button>
+  <script>
+   function handleClick()
+    {alert("Clicked!");}
+
+// __________
+
+ <script>
+   var button= document.getElementById("clickButton");
+
+   button.addEventListener("click", handleClick);
+   button.onclick = handleClick;
+
+   function handleClick(event)
+    {console.log(event.target.innerHTML);}
+  </script>
+
+// __________
+
+<body>
+  <button id="clickButton"> Click!</button>
+
+  <script>
+   var button= document.getElementById("clickButton");
+
+   button.addEventListener("click", function handleClick(event)
+    {console.log(event.target.innerHTML);} );
+  </script>
+ </body>
+
+// __________
+
+<body>
+  <button id="clickButton"> Click!</button>
+
+  <script>
+   var button= document.getElementById("clickButton");
+
+   button.addEventListener("click", function handleClick(event)
+    {console.log(event.target.innerHTML);} );
+  </script>
+ </body>
+
+// __________
+
+var amazingCars = ["BMW", "Lexus", "Ford", "Mercedes"];
+   console.log(amazingCars);
+
+amazingCars.pop();
+console.log(amazingCars);
+
+amazingCars.sort();
+console.log(amazingCars);
+
+console.log(amazingCars.length);
+
+// __________
+
+<body>
+  <label for="firstName">First Name:</label>
+  <input id="firstName"  type="text" placeholder="First Name" />
+  <br>
+ 
+  <label for="middleName">Middle Name:</label>
+  <input id="middleName" type="text" placeholder="Middle Name" />
+  <br>
+
+  <label for="lastName">Last Name:</label>
+  <input id="lastName"   type="text" placeholder="Last Name" />
+  <br>
+
+  <button onclick="nameInfo ()"> Click! </button>
+
+  <br>
+  <br>
+
+  <label for="fullName">Full Name: </label>   <p id="fullName"></p>
+  // //
+// __________
+// //
+// __________
+// //
+// __________
+
+  <script>
+       function nameInfo()
+    {var firstName=   document.getElementById("firstName").value;
+      console.log("First Name: "  + firstName);
+     
+      var  middleName= document.getElementById("middleName").value;
+      console.log("Middle Name: " + middleName);
+
+     var  lastName=   document.getElementById("lastName").value;
+      console.log("Last Name:  "  + lastName);
+  
+     document.getElementById("fullName").innerHTML = ((firstName) + " " + (middleName)  + " " + (lastName))
+      console.log(fullName);   }
+
+  </script>
+ </body>
+
+// __________
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Documet</title>
+ </head>
+
+ <body>
+  <h3>My JS's Test Page</h3>
+  <script src="script.js"></script>
+ </body>
+</html>
+
+function addNumbers(a,b)
+ {var c=a+b;
+  console.log(c)}
+
+addNumbers(4,22);
+
+var number = 3;
+ console.log(number);
+
+number = 4;
+console.log(number);
+
+var number = 5;
+ console.log(number);
+
+let text = "Hello";
+console.log(text);
+
+const boolean = true;
+    // boolean = false;
+
+const numberFive = 5;
+
+let greeting = "Hello World";
+console.log(greeting);
+
+// __________
+
+// string
+let name = 'Brittany';
+ console.log(name);
+
+// number
+let age = 33;
+ console.log(age);
+
+// boolean
+let married = false;
+ console.log(married);
+
+// array
+let dogs = ['Pepper', 'Spot', 'Tank', 'Winston'];
+ console.log(dogs);
+
+// object
+let house =
+ { numberOfBedrooms: 4,
+  numberOfBathrooms: 2.5,
+            hasPool: false,
+           location: 'San Francisco',
+              item: '1.3 million'};
+ console.log(house);
+
+// object
+let house1 =
+ { numberOfBedrooms: 4,
+  numberOfBathrooms: 2.5,
+            hasPool: null,
+           location: 'San Francisco',
+              item: '1.3 million'};
+ console.log(house1);
+
+// object
+let newHouse;
+ console.log(newHouse);
+
+// __________
+
+// numbers
+let number1 = 10;
+let number2 = 10.555;
+let result = number1+number2;
+ console.log("Adding Numbers: " + result);
+
+// strings
+let string1 = "Hello ";
+let string2 = "Bob";
+result = string1+string2
+console.log("Adding Strings: " + result);
+
+// booleans
+let boolValTrue = true;
+let boolValFalse = false;
+console.log("Treu Bool: " + boolValTrue + ", False Bool: " + boolValFalse);
+
+// Arrays
+let arrayNumbers = [1 , 2 , 3 , 4 , 5 ];
+ console.log("Numeric Array: " + arrayNumbers);
+let arrayStrings = ["Hello ", "there ", "Bob"];
+ console.log("String Array: " + arrayStrings);
+let arrayMixed = [1 , "Hello ", 2 , "there ", 3 , ["Mr. ", "Bob"]];
+ console.log("Mix Array: " + arrayMixed);
+
+// Objects
+let student =
+ {          name: "Billy",
+       graduated: false,
+  graduationDate: null};
+ console.log("Student Object: " + student);
+ console.log("Student Object Stringified: " + JSON.stringify(student));
+
+ // Undefiend
+ let MyNumber;
+  console.log("My Number: " + MyNumber);
+
+ MyNumber = 222;
+ console.log ("My Number Now: " + MyNumber) ;
+
+// __________
+
+ let person0 = {firstName: 'John',
+                 lastName: 'Smith',
+               getFullName: function()
+               {return person0.firstName + ' ' + person0.lastName;}};
+   
+let person1 = {firstName: 'John',
+                lastName: 'Smith',
+              getFullName: function()
+               {console.log(this.firstName + ' ' + this.lastName); }};
+
+let carMiles = {odometer: 5000,
+                traveled: 250,
+       getUpdatedOdometer: function()
+        {return this.odometer + this.traveled;}};
+ carMiles.getUpdatedOdometer();
+
+// __________
+
+//  address object
+let addresss = {street: '123 St.',
+                  city: 'LA',
+                 state: 'CA',
+
+            prinDetails: function()
+             {console.log("My Adrress: " +
+                  this.street + ", " +
+                  this.city + ", " +
+                  this.state);}}
+
+//  person object
+let person = {   name: 'John Smith',
+              address: addresss,
+          prinDetails: function()
+           {console.log("Me: " + this.name);
+
+            this.address.prinDetails();}}
+
+person.prinDetails();
+
+// __________
+
+let user = {firstName: "Coder",
+             lastName: "Bill",
+             fullName: function()
+               {console.log(this.firstName + " " +
+                            this.lastName);}};
+user.fullName();
+
+// __________
+
+let user = {firstName: "Coder",
+             lastName: "Bill",
+             fullName: function()
+              {return this.firstName + " " + this.lastName;}}
+user.fullName();
+
+// __________
+
+let product = {cost: 1200,
+        deliveryFee: 200,
+        newPayments: function ()
+       {console.log ((this.cost + this.deliveryFee)*100 + " Cent ");} };
+
+product.newPayments();
+
+let product = {cost: 1200,
+        deliveryFee: 200,
+        newPayments: function()
+         {return (this.cost + this.deliveryFee) * 100; } }
+
+// __________
+
+let number = 0;
+
+number = 5 + 3 - (2 * 4) + (2 / 2); // 1
+
+number += 5; // 6
+number -= 1; // 5
+
+let remainder = number % 4 // 1
+
+// --
+let equals = 5 == 4; // false
+
+let notEquals = 5 != 4; // true
+
+let greaterThan = 5 > 4; // true
+greaterThan = 5 > 5; // false
+let greaterThan0rEqual = 5 >= 5;  // true
+
+let lessThan = 5 < 4; // false
+lessThan = 5 < 5;  // false
+let lessThan0rEqual = 5 <= 5 // true
+
+let equals = 5 == '5'; // true
+equals  = 5 == '5'; // false
+
+let notEquals = 5 != '5';  //  false
+notEquals = 5 != '5';  //  true
+
+// --
+let hasBread = true;
+let hasPeanutButter = true;
+let hasJam = false;
+
+let canMakePBSandwich = hasBread && hasPeanutButter;
+let canMakePBJellySandwich = hasBread && hasPeanutButter && hasJam;
+
+let canEat = canMakePBSandwich || canMakePBJellySandwich;
+
+let isHungry = false;
+let mustEat = true;
+
+let didEat = canEat && (isHungry || mustEat);
+
+isHungry = !didEat;
+
+let odd = 7;
+let even = 20;
+let greaterThan;
+   if(odd >19 && even>19)
+      {greaterThan = true;}
+ else {greaterThan = false;}
+
+ let odd = 7;
+let even = 20;
+  if(odd === even)
+     {equalTo = true;}
+else {equalTo = false;}
+
+// __________
+
+let midArray = [12, 13];
+let normArray = [1, 2, 3, 4, 5];
+
+let midArray = [12, 13];
+let normArray = [1, 2, 3, midArray, 4, 5];
+
+console.log(normArray);
+
+let midArray = [12, 13];
+let normArray = [1, 2, 3, ...midArray, 4, 5];
+
+console.log(normArray)
+
+let arr1 = ['a', 'b', 'c', 'd'];
+let arr2 = ['e', 'f', 'g', 'h'];
+
+let arr3 = [...arr1, ...arr2];
+console.log(arr3);
+
+let obj1 = { name: 'John', age: 29 };
+let obj2 = { name: 'Alice', email: 'alice@email.com' };
+
+let mergeObj = { ...obj1, ...obj2 };
+
+console.log(mergeObj);
+//  Output: {name: "Alice", age: 29, email: "alice@email.com"}
+
+// __________
+
+function sumOfAllItems(arrayOfIntegers)
+ {let total = 0;
+  for(let i = 0; i <arrayOfIntegers.length; i++)
+   {total += arrayOfIntegers[i];}
+  return total;}
+
+let mary = [9, 11, 9];  // total = 29
+let bill = [8, 14, 4];  // total = 26
+let spike = [13, 4, 5]; // total = 22
+                        // Grand total = 77
+
+let marySales = sumOfAllItems(mary);
+let billSales = sumOfAllItems(bill);
+let spikeSales= sumOfAllItems(spike);
+
+let allSale = [...mary, ...bill, ...spike];
+let totalSales = sumOfAllItems(allSale);
+
+console.log( "Mary Sold = " + marySales);
+console.log( "Bill Sold = " + billSales);
+console.log("Spike Sold = " + spikeSales);
+console.log("Total Sold = " + totalSales);
+
+// __________
+
+let firstSet = ["q", "w", "e", "r", "t", "y"];
+let secondSet = ["1", "3", "3", "7"];
+let cluster= [...firstSet, ...secondSet];
+
+// __________
+
+let goodGrades = ["A", "B"];
+let notSoGoodGrades = ["C", "D", "F"];
+let grades= [...goodGrades, ...notSoGoodGrades];
+
+// __________
+
+let idealCar =
+  {         Name: 'Mustang',
+           Color: 'Red',
+  weightInPounds: 3600,
+           myCar: function()
+            {console.log ("My ideal car is a " + this.Name + "with a color of " + this.Color + ", but I do not want it to be over " + this.weightInPounds + "pounds.");}}
+            idealCar.myCar();
+      
+
+// __________
+
+function idCard()
+ {var firstName=             document.getElementById("firstName").value;
+ console.log("First Name: "  + firstName);
+
+var  lastName=              document.getElementById("lastName").value;
+console.log("Last Name:  "  + lastName);
+
+document.getElementById("postFullName").innerHTML = ((firstName) + " " + (lastName))
+ console.log("Full Name: " + postFullName);
+//
+// __________
+
+var age =           parseInt(document.getElementById("age").value);
+ console.log("Age:  "  + age);
+
+ document.getElementById("postAge").innerHTML = ("Age: " + age)
+ console.log("Age: " + postAge);
+
+//
+// __________
+
+var phoneNumber = parseInt(document.getElementById("phoneNumber").value);
+ console.log("Phone Number:  "  + phoneNumber);
+
+ document.getElementById("postPhoneNumber").innerHTML = ("Phone Number: " + phoneNumber)
+ console.log("Phone Number: " + postPhoneNumber);
+
+//
+// __________
+
+var numberArray = [];
+ numberArray.push("age").value;
+ numberArray.push("phoneNumber").value;
+
+   for (var i = 0; i < numberArray.length; i++);
+        {if (numberArray[i] <= 100)
+             {document.getElementById("postAge").innerHTML = ("Age: " + age);}
+
+    else if (numberArray[i] > 100)
+             {document.getElementById("postPhoneNumber").innerHTML = ("Phone Number: " + phoneNumber);}  }
+
+//
+// __________
+
+var  address=     document.getElementById("address").value;
+ console.log("Address: " + address);
+
+document.getElementById("postAddress").innerHTML = ("Address: " + address)
+ console.log("Address: " + postAddress);                          };
+
+//
+// __________
+
+// __________
+
+<!DOCTYPE html>
+
+ <head>
+  <meta charset="utf-8">
+  <title></title>
+ </head>
+
+ <body>
+
+  <h3>"Let's Create an ID Card!"</h3>
+  <br>
+  <br>
+ 
+  <label for="firstName">First Name:</label>
+  <br>
+  <input id="firstName"   type="text" placeholder="First Name" />
+  <br>
+  <br>
+ 
+  <label for="lastName">Last Name:</label>
+  <br>
+  <input id="lastName"    type="text" placeholder="Last Name" />
+  <br>
+  <br>
+ 
+  <label for="age">Age: </label>
+  <br>
+  <input id="age"         type="number" placeholder="Age" />
+  <br>
+  <br>
+ 
+  <label for="phoneNumber">Phone Number:</label>
+  <br>
+  <input id="phoneNumber" type="tel" placeholder="Phone Number" />
+  <br>
+  <br>
+ 
+  <label for="address">Address:</label>
+  <br>
+  <input id="address"   type="text" placeholder="Address" />
+  <br>
+  <br>
+
+  <button onclick="idCard ()"> Click! </button>
+  <br>
+
+// __________
+
+ 
+
+<br>
+<br>
+
+<div id="idCard">
+ <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+ <p id="postFullName"></p>
+ <p id="postAge"></p>
+ <p id="postPhoneNumber"></p>
+ <p id="postAddress"></p>
+
+</div>
+
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</body>
+
+</html>
+
+// __________
+
+img {width: 90px;
+    height: 90px;
+     float: left;}
+
+body {background-color: #c66fee;}
+
+form {text-align: center;}
+
+div {background-color: #f87335;}
+
+#idCard {border: 5px solid black;
+         height: 14em;
+          width: 25em;}
+
+#postFullName {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                 font-size: 30px;
+               font-weight: bolder;}
+
+// __________
+
+// const power = (value, exponent) => value ** exponent;
+const power = (value, exponent= 2) => value ** exponent;
+
+// square n^2 -- 3^2 = 9
+// function square(value)
+//  {return value*value;}
+
+// const square = value => value * value;
+const square = value => power(value);
+
+// cube n^3 -- 3*3 = 27
+// function cube(value)
+//  {return value*value*value;}
+
+// const cube = value => value *  value * value;
+const cube = value =>power(value, 3);
+
+// output
+let value = 3;
+let exp = 4;
+
+console.log(square(value));
+console.log(cube(value));
+console.log(power(value, exp));
+
+// __________
+
+function myFunction(param1, param2)
+ {return param1 + param2;}
+  myFunction(2, 4);
+
+const addFunction = (param1, param2) =>
+ {return param1 + param2;};
+  addFunction(2, 4);
+
+const addFunction0 = (param1, param2) => param1 + param2;
+  addFunction0(2, 4);
+
+const stringFunction = string => string + '!';
+  stringFunction('My name is Hermione');
+
+const hello = () => console.log('Hello World!');
+
+function hello0()
+ {console.log('Hello World!'); };
+
+console.log(myFunction);
+console.log(addFunction);
+console.log(addFunction0);
+console.log(stringFunction);
+console.log(hello);
+console.log(hello0);
+
+const defParam = (a, b = 20) => a * b;
+defParam(10);
+
+const defParam = (a, b = 20) => a * b;
+defParam(3, 10);
+
+// __________
+
+const doubleAge = (age) =>
+  {return age * 2;}
+
+// __________
+
+const defaultParam = (a, b = 10) =>
+  {return a * b;}
+
+// __________
+
+const addName = (firstName, lastName) =>
+  {return firstName + " " + lastName;}
+
+// __________
+
+switch (expression)
+ {case value1: statement1;
+   break;
+  case value2: statement2;
+   break;
+  case value3: statement3;
+   break;
+  default: defaultStatement;}
+
+     if (expression == value1)
+         {statement1;}
+else if (expression == value2)
+         {statement2;}
+else if (expression == value3)
+         {statement3;}
+else     {defaultStatement;}
+
+// __________
+
+let day = 4;
+let dayName;
+switch (day)
+        {case 1: dayName = 'Sunday';
+          break;
+         case 2: dayName = 'Monday';
+          break;
+         case 3: dayName = 'Tuesday';
+          break;
+         case 4: dayName = 'Wednesday';
+          break;
+         case 5: dayName = 'Thursday';
+          break;
+         case 6: dayName = 'Friday';
+          break;
+         case 7: dayName = 'Saturday';
+          break;
+         default: dayName = 'Invalid day';}
+       console.log(dayName);
+
+// __________
+
+let grade = 7;
+let school;
+
+switch (grade) {case 1: school = 'Elementary School';
+                 break;
+                case 2: school = 'Elementary School';
+                 break;
+                case 3: school = 'Elementary School';
+                 break;
+                case 4: school = 'Elementary School';
+                 break;
+                case 5: school = 'Elementary School';
+                 break;
+                case 6: school = 'Middle School';
+                 break;
+                case 7: school = 'Middle School';
+                 break;
+                case 8: school = 'Middle School';
+                 break;
+                case 9: school = 'High School';
+                 break;
+               case 10: school = 'High School';
+                 break;
+               case 11: school = 'High School';
+                 break;
+               case 12: school = 'High School';
+                 break;
+               default: school = 'Invalid Entry';}
+
+console.log(school);
+
+// __________
+
+let text;
+switch (new Date().getDay())
+        {case 6: text = 'Today is Saturday';
+          break;
+         case 0: text = 'Today is Sunday';
+          break;
+        default: text = 'Darn, its a weekday. Looking forward to the weekend!';}
+
+console.log(text);
+
+// __________
+
+const Animal_Type =
+ {  Dog: {type:  "dog", sound: "woof"},
+    Cat: {type:  "cat", sound: "meow"},
+   Lion: {type: "lion", sound: "roar"}, }
+
+const pet1 =
+ {name: "Skipe", type: Animal_Type.Dog}
+
+ const pet2 =
+ {name: "Sylvester", type: Animal_Type.Cat}
+
+// const checkIfPet = pet =>
+// {switch(pet.type)
+// { case Animal_Type.Dog: return  true;
+// case Animal_Type.Cat: return  true;
+// case Animal_Type.Lion: return false; } }
+
+const checkIfPet = pet =>
+ {switch(pet.type)
+  { case Animal_Type.Dog:
+    case Animal_Type.Cat:
+      return  true;
+   default:
+      return false; } }
+
+// const checkIfDog = pet =>
+//  {if(!checkIfPet(pet))
+//      {return pet.name + " is not a pet"}
+//       switch(pet.type)
+//  {case  Animal_Type.Dog:
+//      return pet.name + " says " +                 pet.type.sound;
+//   case  Animal_Type.Cat:
+//      return pet.name + " is not a " + Animal_Type.Dog.type;
+//   case Animal_Type.Lion:
+//      return pet.name + " is not a " + Animal_Type.Dog.type; }}
+
+  const checkIfDog = pet =>
+  {if(!checkIfPet(pet))
+      {return pet.name + " is not a pet"}
+       switch(pet.type)
+  {case  Animal_Type.Dog:
+      return pet.name + " says " +                 pet.type.sound;
+   default:
+      return pet.name + " is not a " + Animal_Type.Dog.type;}} 
+
+//  const checkIfCat = pet =>
+//  {if(!checkIfPet(pet))
+//      {return pet.name + " is not a pet"}
+//       switch(pet.type)
+//  {case  Animal_Type.Cat:
+//      return pet.name + " says " +                 pet.type.sound;
+//   case  Animal_Type.Dog:
+//      return pet.name + " is not a " + Animal_Type.Cat.type;
+//   case Animal_Type.Lion:
+//      return pet.name + " is not a " + Animal_Type.Cat.type; }}
+
+  const checkIfCat = pet =>
+  {if(!checkIfPet(pet))
+      {return pet.name + " is not a pet"}
+       switch(pet.type)
+  {case  Animal_Type.Cat:
+      return pet.name + " says " +                 pet.type.sound;
+   default:
+      return pet.name + " is not a " + Animal_Type.Cat.type; }}
+
+console.log("Checking if Pets are Dogs");
+console.log(checkIfDog(pet1));
+console.log(checkIfDog(pet2));
+
+console.log("Checking if Pets are Cats");
+console.log(checkIfCat(pet2));
+console.log(checkIfCat(pet1));
+
+// __________
+
+const Animal_Type =
+ {  Dog: {type:  "dog", sound: "woof"},
+    Cat: {type:  "cat", sound: "meow"},
+   Lion: {type: "lion", sound: "roar"}, }
+
+const pet1 =
+ {name: "Skipe", type: Animal_Type.Dog}
+
+ const pet2 =
+ {name: "Sylvester", type: Animal_Type.Cat}
+
+// const checkIfPet = pet =>
+// {switch(pet.type)
+// { case Animal_Type.Dog: return  true;
+// case Animal_Type.Cat: return  true;
+// case Animal_Type.Lion: return false; } }
+
+const checkIfPet = pet =>
+ {switch(pet.type)
+  { case Animal_Type.Dog:
+    case Animal_Type.Cat:
+      return  true;
+   default:
+      return false; } }
+
+// const checkIfDog = pet =>
+//  {if(!checkIfPet(pet))
+//      {return pet.name + " is not a pet"}
+//       switch(pet.type)
+//  {case  Animal_Type.Dog:
+//      return pet.name + " says " +                 pet.type.sound;
+//   case  Animal_Type.Cat:
+//      return pet.name + " is not a " + Animal_Type.Dog.type;
+//   case Animal_Type.Lion:
+//      return pet.name + " is not a " + Animal_Type.Dog.type; }}
+
+  const checkIfDog = pet =>
+  {if(!checkIfPet(pet))
+      {return pet.name + " is not a pet"}
+       switch(pet.type)
+  {case  Animal_Type.Dog:
+      return pet.name + " says " +                 pet.type.sound;
+   default:
+      return pet.name + " is not a " + Animal_Type.Dog.type;}} 
+
+//  const checkIfCat = pet =>
+//  {if(!checkIfPet(pet))
+//      {return pet.name + " is not a pet"}
+//       switch(pet.type)
+//  {case  Animal_Type.Cat:
+//      return pet.name + " says " +                 pet.type.sound;
+//   case  Animal_Type.Dog:
+//      return pet.name + " is not a " + Animal_Type.Cat.type;
+//   case Animal_Type.Lion:
+//      return pet.name + " is not a " + Animal_Type.Cat.type; }}
+
+  const checkIfCat = pet =>
+  {if(!checkIfPet(pet))
+      {return pet.name + " is not a pet"}
+       switch(pet.type)
+  {case  Animal_Type.Cat:
+      return pet.name + " says " +                 pet.type.sound;
+   default:
+      return pet.name + " is not a " + Animal_Type.Cat.type; }}
+
+console.log("Checking if Pets are Dogs");
+console.log(checkIfDog(pet1));
+console.log(checkIfDog(pet2));
+
+console.log("Checking if Pets are Cats");
+console.log(checkIfCat(pet2));
+console.log(checkIfCat(pet1));
+
+// __________
+
+let phoneNumberPresent = true;
+let needsNumber;
+switch(phoneNumberPresent)
+ {case true: needsNumber = false;
+    break;
+  case false: needsNumber = true;
+    break;
+  default: needsNumber = "Try Again";}
+
+// __________
+
+  let selectedNumber = 23;
+  let output;
+  switch(selectedNumber)
+    {case 23: output = "That's exactly what I was thinking, spoooky!";
+      break;
+     case  9: output = "How did you know?"
+      break;
+     default: output = "Better luck next time."}
+
+// __________
+
+try {
+    // code block goes here
+    }
+     catch (err)
+     {
+      // error handling
+     }
+
+// __________
+
+try {
+     alert('Start of try block');// #1 This line runs first
+  
+    // No errors occurred so you move on to number #2
+  
+     alert('End of try block');// #2 This line runs next
+   } catch (err) {
+     alert('Catch is ignored because there are no errors');// #3 This is line ignored due to there being no errors.
+   }
+  
+   alert('...Then the execution continues');// #4 This alert is executed
+
+// __________
+
+try {
+  alert('Start of try block');// #1 This line executes
+
+  randomVariable;// error, variable is not defined!
+
+  alert('End of try (never reached)');// #2 This line is never reached
+} catch (err) {
+  alert('Error has occurred!');// #3 This is line executed since an error has occurred.
+}
+
+alert('...Then the execution continues');// #4 Finally, this is executed.
+
+// __________
+
+try {
+ // Block of code to try
+} catch (err) {
+ // Block of code to handle errors
+} finally {
+ // Block of code to be executed regardless of the try..catch result
+}
+
+// __________
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Please input a number between 10 and 25:</p>
+
+<input id="demo" type="number">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="message"></p>
+
+<script>
+function myFunction() {
+    let message = document.getElementById("message");
+    message.innerHTML = "";
+    let x = document.getElementById("demo").value;
+    try {
+        if(x == "") throw "Please input a number";
+        if(x < 10) throw "Your number is too low!";
+        if(x > 25) throw "Your number is too high!";
+    }
+    catch(err) {
+        message.innerHTML = "Input " + err;
+    }
+    finally {
+        document.getElementById("demo").value = "";
+    }
+}
+</script>
+
+</body>
+</html>
+
+// __________
+
+// ----
+const average = arrayOfNums =>
+ {if(typeof arrayOfNums == 'undefined' || arrayOfNums == null)
+   {throw "Invalied Input";}
+
+  if(arrayOfNums.length == 0)
+   {throw "Empty Input";}
+ let total = 0.0;
+ for(var i = 0; i < arrayOfNums.length; i++)
+  {total += arrayOfNums[i];}
+ return total/arrayOfNums.length;}
+
+// ----
+
+ const testData = data =>
+  {var result = 0;
+   console.log("----");
+   try {result = average(data);
+   console.log("The Average is: " + result);}
+   catch(err)
+    {console.log("ERROR: " + err);}
+   finally
+    {console.log("Completed Testing: " + data);} }
+
+let     validData = [1, 2, 3, 4, 5];//average = 3
+let     emptyData = [             ];//  error = empty
+let      nullData = null           ;//  error = invalid
+let undefinedData                  ;//  error = invalid
+
+testData(validData);
+testData(emptyData);
+testData(nullData);
+testData(undefinedData);
+
+// __________
+
+condition ? expression on true : expression on false
+
+// __________
+
+let age = 17;
+const isOldEnough = age >= 18 ? 'Welcome to our site.' : 'Sorry; you must be 18 or older to enter.';
+console.log(isOldEnough);
+
+// __________
+
+let age = 17;
+
+  if (age >= 18) {('Welcome to our site.');}
+else             {('Sorry, you must be 18 or older to enter');}
+
+// __________
+
+let isOdd = false;
+
+isOdd ? console.log(1) : console.log(2);
+
+// __________
+
+let pokemon = 130;
+
+const title = pokemon < 145 ? 'New Trainer' : 'Master';
+
+console.log(title);
+
+// __________
+
+let age = 6;
+
+const inKindergarten = age < 5 ? ' Too young' : 'Old Enough';
+
+// __________
+
+condition ? expression on true : expression on false
+
+// __________
+
+let age = 17;
+
+const isOldEnough = age >= 18 ? 'Welcome to our site.' : 'Sorry; you must be 18 or older to enter.';
+
+console.log(isOldEnough);
+
+// __________
+
+let age = 17;
+if (age >= 18) {('Welcome to our site.');}
+else {('Sorry, you must be 18 or older to enter');}
+
+// __________
+
+let isOdd = false;
+
+isOdd ? console.log(1) : console.log(2);
+
+// __________
+
+let pokemon = 130;
+
+const title = pokemon < 145 ? 'New Trainer' : 'Master';
+
+console.log(title);
+
+// __________
+
+let age = 6;
+
+const inKindergarten = age < 5 ? ' Too young' : 'Old Enough';
+
+// __________
+
+const person =
+ {      name: "Bob",
+      height:    70,// inches
+  shoeHeight:    01,// inches
+  hatHeight :    02,// inches
+
+   getHeight:
+    function(wearingClothes = false, withHat = false)
+     {var height = this.height;
+
+//      if(wearingClothes) {height += this.shoeHeight;
+//        if(withHat)        {height += this.hatHeight;  }}
+
+//   height += wearingClothes ? this.shoeHeight: 0;
+//   height += (wearingClothes && withHat) ? this.hatHeight : 0;
+   height += wearingClothes ? (withHat ? (this.shoeHeight + this.hatHeight): this.shoeHeight) : 0;
+  return height}}
+
+let      heightNoClothes = person.getHeight();          // = 70
+let    heightWithClothes = person.getHeight(true);      // = 71
+let heightWithClothesHat = person.getHeight(true, true);// = 73
+
+console.log   ("Height without Clothing: " + heightNoClothes      + " inches");
+console.log      ("Height with Clothing: " + heightWithClothes    + " inches");
+console.log("Height with Clothing & Hat: " + heightWithClothesHat + " inches");
+
+// __________
+
+let age = 15;
+let movieRating = (age > 12) ? "PG-13" : "PG";
+
+// __________
+
+function name()
+ {let firstName;
+   if (firstName === "John") {document.getElementById("demo").innerHTML = "Hello John!";}
+ else                        {document.getElementById("demo").innerHTML = "Hello Human!";}}
+
+// __________
+
+ let age = 17;
+const isOldEnough = age >= 18 ? 'Welcome to our site.' : 'Sorry; you must be 18 or older to enter.';
+console.log(isOldEnough);
+
+// 
+
+let age = 17;
+  if (age >= 18) {('Welcome to our site.');}
+else             {('Sorry, you must be 18 or older to enter');}
+
+// __________
+
+let highSchoolGrade = 11;
+let yourGrade;
+
+function updateGrade()
+ {switch (highSchoolGrade)
+     {case 09: yourGrade = 'Freshman';
+       break;
+      case 10: yourGrade = 'Sophomore';
+       break;
+      case 11: yourGrade = 'Junior';
+       break;
+      case 12: yourGrade = 'Senior';
+       break;
+      default: yourGrade = 'Invalid';}
+      
+      console.log(yourGrade); }
+
+ function name()
+  {let firstName;
+     const Hello = firstName === "John" ? document.getElementById("demo").innerHTML = "Hello John!" :  document.getElementById("demo").innerHTML = "Hello Human!";
+     console.log(Hello);  }
+
+// __________
+
+// Define the class
+class aClass {constructor(name, age)
+               {this.name = name;
+                this.age  = age;}
+
+// Method assigned to class
+    sayName() {alert(this.name);}
+
+// Method assigned to class
+    sayAge() {alert(this.age);}}
+  
+// Instantiating the aClass with the 'new' keyword
+  const myInstance = new aClass("andrew", 30);
+  myInstance.sayName();
+// __________
+// Define the class
+class aClass {constructor(name, age) {this.name = name;   // Jo
+                                      this.age  =  age;}  // 30
+  // Method assigned to class
+              sayName() {alert(this.name);}
+  // Method assigned to class
+              sayAge () {alert(this.age);}  }
+
+// Instantiating the aClass with the 'new' keyword
+const myInstance = new aClass("Jo", 30);
+      myInstance.sayName();
+// __________
+class Vehicle {constructor(make, model, year)
+      {this.make  = make;
+       this.model = model;
+       this.year  = year;}  }
+
+let myCar = new Vehicle("Nissan", "Rogue", 2017);
+console.log(myCar);
+// __________
+class Person {constructor(firstName, lastName) {this.firstName = firstName;
+      this.lastName  = lastName; }
+      
+run() {console.log(this.firstName + " " + this.lastName  + " is running.");}
+walk() {console.log(this.firstName + " " + this.lastName  + " is walking.");}
+greeting() {console.log("Hello, my name is " + this.firstName + ".");}    }
+
+let rose = new Person("Rose", "Dawson");
+rose.run();
+rose.walk();
+rose.greeting();    
+// __________
+class Car {constructor(make, model, year) {this._make  = make;
+                                           this._model = model;
+                                           this._year  = year; }
+
+            get make() {return this._make;}
+
+            set make(value) {const possibleMakes = ["Honda", "Toyota", "Nissan"];
+                               if (possibleMakes.includes(value)) {this._make = value;} 
+                             else {throw Error(value + " is not a valid make");}  }
+    
+            get description() {return this._year + " " + this._make + " " + this._model;}  }
+    
+let myCar = new Car("Nissan", "Rogue", 2017);
+// myCar.make = "Volvo";
+console.log(myCar.description);
+// __________
+class Person {constructor(name, age) {this.name = name;
+                                      this.age  = age; }
+    
+      greeting() {console.log("Hello, my name is " + this.name + " and I am " + this.age + "."); }    }
+    
+let andrew = new Person("Andrew", 30);
+let mike = new Person("Mike", 24);
+let frank = new Person("Frank", 29);
+
+andrew.greeting();
+mike.greeting();
+frank.greeting();
+// __________
+class Person 
+{constructor(firstName, lastName) 
+{this.firstName = firstName;
+ this.lastName  = lastName;}
+    
+ greeting() {console.log("Hello, my name is " + this.firstName + ".");  }  }
+    
+class NewStudent extends Person 
+{constructor(studentID, firstName, lastName) 
+{super(firstName, lastName); 
+this.studentID = studentID;}
+      studentInfo() {console.log(this.studentID + " " + this.firstName + ", " + this.lastName);} }
+
+let student = new NewStudent(12, "John", "Smith");
+    student.greeting();
+    student.studentInfo();
+// __________
+class Employee {constructor(name, salary, hireDate) {this.name     = name;
+                                                     this.salary   = salary;
+                                                     this.hireDate = hireDate;}
+        getName() {console.log(this.name.toUpperCase());}
+      getSalary() {console.log(this.salary);}
+    getHireDate() {console.log(this.hireDate);}    }
+// __________
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="date">Today's Date</div>
+            <div class=" links"> <div class="signup">Sign Up</div>
+                                 <div class="login">Login</div>            
+            </div>
+        </div>    
+    </div>
+
+    <div class='header'> <div class='subscribe'>Subscribe</div> 
+                         <div class='logo'>  <img src='images/logo.png' />  </div>
+                         <div class='icons'> <img src='images/icons.svg' /> </div>
+    </div>
+    
+    <div class="image-grid-container">
+        <div class="image-grid">
+            <div class="image-grid-item first-item"> <img src="images/one.png" />   </div>
+            <div class="image-grid-item">            <img src="images/two.png" />   </div>
+            <div class="image-grid-item">            <img src="images/three.png" /> </div>
+            <div class='image-grid-item'>            <img src='images/four.png' />  </div>
+            <div class="image-grid-item last-item">  <img src='images/five.png' />  </div>
+        </div>
+    </div>
+
+    <div class='footer'> <div class='footer-item footer-one'></div>
+                         <div class='footer-item footer-two'></div>
+                         <div class='footer-item footer-three'></div>
+    </div>
+
+</body>
+
+</html>
+
+// **********
+
+* {      margin: 0;
+        padding: 0;
+     box-sizing: border-box;}
+
+.menu-container {           color: white;
+                 background-color: blue;
+                          padding: 20px 0;
+                          display: flex;
+                  justify-content: center;}
+
+.menu {   border: 1px solid white;
+           width: 900px;
+         display: flex;
+ justify-content: space-between;}
+
+.links {    display: flex;
+    justify-content: flex-end;}
+
+.login {margin-left: 20px;}
+
+.header-container {color: black;
+        background-color: lightblue;
+                 display: flex;
+         justify-content: center;}
+  
+.header {  width: 900px;
+          height: 300px;
+         display: flex;
+ justify-content: space-between;
+     align-items: center;}
+
+     .image-grid-container {display: flex;
+                    justify-content: center;}
+
+.image-grid {width: 900px;
+           display: flex;
+   justify-content: center;
+         flex-wrap: wrap;
+    flex-direction: row-reverse;
+       align-items: center;}
+
+.image-grid-item {width: 235px;
+                 height: 250px;}
+
+.first-item {order: 1;}
+
+.last-item {order: -1;}
+
+.icons, .subscribe {align-self: flex-end;
+                 margin-bottom: 20px;}
+
+.footer { display: flex;
+  justify-content: space-between;}
+
+.footer-item {border: 1px solid oranges;
+    background-color: lightblue;
+              height: 200px;
+                flex: 1;}
+
+.footer-one, .footer-three {background-color: lightgrey;
+                                        flex: initial;
+                                       width: 300px;}
+// __________
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">Cats and Flowers</div>
+    </div>
+    <div class="container">
+        <div class="photos">
+            <img src="images/cat1.jpg" />
+            <img src="images/flower1.jpg" />
+            <img src="images/cat2.jpg" />
+            <img src='images/flower2.jpg' />
+            <img src='images/cat7.jpg' />
+            <img src='images/flower3.jpg' />
+            <img src='images/cat4.jpg' />
+            <img src='images/cat5.jpg' />
+            <img src='images/flower5.jpg' />
+        </div>
+    </div>
+</body>
+
+</html>
+
+// **********
+* {   margin: 0;
+     padding: 0;
+  box-sizing: border-box;}
+
+.header-container {color: white;
+        background-color: rgb(237, 159, 159);
+             font-family: 'Courier New', Courier, monospace;
+               font-size: 20px;
+                 padding: 20px 0;
+                 display: flex;
+         justify-content: center;}
+
+.container {display: flex;
+    justify-content: center;}
+.photos {  display: flex;
+  background-color: white;
+    flex-direction: row;
+         flex-wrap: wrap;
+   justify-content: space-around;
+           padding: 5px;
+         max-width: 980px;
+       align-items: center;}
+
+.photos img {display: flex;
+    background-color: #fff;
+               width: 20%;
+     justify-content: space-around;
+             padding: 10px;}
+
+// __________
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Bootstrap Lesson</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/flatly/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-gJWVjz180MvwCrGGkC4xE5FjhWkTxHIR/+GgT8j2B3KKMgh6waEjPgzzh7lL7JZT" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+<!-- * // * ________________________________________________________________________________________________________________________________________________ * // * -->
+
+    <body><br>
+      <br>
+      <div class="container">
+        <button class="btn" style="background-color: aquamarine;">Click Me</button>
+        <br><br>
+        <input type="button" class="btn" value="Click Me!" style="background-color: aquamarine;" />
+        <br><br>
+        <a href="http://google.com" class="btn" style="background-color: aquamarine;">Go To Google</a>
+        <br><br>
+        <button class="btn btn-primary">Submit</button>
+        <br><br>
+        <button class="btn btn-secondary">Cancel</button>
+        <br><br>
+        <button class="btn btn-outline-primary">Submit</button>
+        <br><br>
+        <button class="btn btn-outline-secondary">Cancel</button>
+        <br><br>
+        <button class="btn btn-primary btn-sm">Small Button</button>
+        <br><br>
+        <button class="btn">Default Button</button>
+        <br><br>
+        <button class="btn btn-success btn-lg">Large Button</button>
+        <br><br>
+        <button class="btn btn-block btn-primary">Block Button</button>
+
+
+      </div>
+      <br>
+
+      <div class="container">
+        <p class="text-success">This is the color of success!</p>
+        <p class="text-danger">Danger, there be lions ahead!</p>
+        <p class="text-muted">This text may not apply to the user anymore.</p>
+        <br>
+        <div class="bg-primary text-white">This will add emphasis to the element.</div>
+        <div class="bg-info text-white">Put some interesting info here!</div>
+        <div class="bg-white text-dark">Sometimes plain is just right.</div>
+      </div>
+      <br>
+
+      <div class="container">
+        <form>
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Small</span>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Default</span>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Large</span>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+        </form>
+    </div>
+    <br>
+
+    <div class="container">
+      <form>
+          <div class="input-group input-group-sm">
+              <input type="text" class="form-control">
+              <div class="input-group-append">
+                  <span class="input-group-text">Small</span>
+              </div>
+          </div>
+
+          <div class="input-group">
+              <input type="text" class="form-control">
+              <div class="input-group-append">
+                  <span class="input-group-text">Default</span>
+              </div>
+          </div>
+
+          <div class="input-group input-group-lg">
+              <input type="text" class="form-control">
+              <div class="input-group-append">
+                  <span class="input-group-text">Large</span>
+              </div>
+          </div>
+      </form>
+  </div>
+    <br>
+
+      <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="col-md-6 form-group">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" class="form-control">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" class="form-control">
+                </div>
+            </div>
+        </form>
+    </div>
+    <BR>
+
+      <div class="container">
+        <form> 
+          <div class="form-group row"> 
+              <label for="input1">Sample label</label>
+              <input type="text" class="form-control" id="input1" placeholder="Sample Text">
+          </div>
+
+            <div class="form-group">
+                <label for="input2">Another label</label>
+                <input type="text" class="form-control" id="input2" placeholder="Sample Text">
+            </div>
+        </form>
+    </div>
+    <br>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-4 offset-sm-4">.col-sm-4 .offset-sm-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 offset-sm-3">.col-sm-3 .offset-sm-3</div>
+            <div class="col-sm-3 offset-sm-3">.col-sm-3 .offset-sm-3</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">.col-sm-6 .offset-sm-3</div>
+        </div>
+    </div>
+    <br>
+
+      <div class="col-sm-8 col-lg-4">Content Goes Here</div><br>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-lg-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-lg-6 col-sm-3">.col-6 .col-sm-3</div>
+          <div class="col-lg-6 col-sm-3">.col-6 .col-sm-3</div>
+      </div>
+  </div>
+
+      <br>
+      <div class="container">
+        <div class="row" style="height: 200px; border: 1px dotted blue;">
+            <div class="col align-self-start">One of three columns</div>
+            <div class="col align-self-center">One of three columns</div>
+            <div class="col align-self-end">One of three columns</div>
+        </div>
+    </div>
+      <br>
+
+      <div class="container">
+        <div class="row align-items-start" style="height: 200px; border: 1px dotted blue;">
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div><br>
+
+        <div class="row align-items-center" style="height: 200px; border: 1px dotted blue;">
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div><br>
+
+        <div class="row align-items-end" style="height: 200px; border: 1px dotted blue;">
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div>
+    </div>
+    <br>
+
+      <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-4">One of two columns</div>
+            <div class="col-4">One of two columns</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4">One of two columns</div>
+            <div class="col-4">One of two columns</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-4">One of two columns</div>
+            <div class="col-4">One of two columns</div>
+        </div>
+        <br>
+        
+        <div class="row justify-content-center">
+          <div class="col-4">One of two columns</div>
+          <div class="col-4">One of two columns</div>
+      </div>
+        <div class="row justify-content-around">
+            <div class="col-4">One of two columns</div>
+            <div class="col-4">One of two columns</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">One of two columns</div>
+            <div class="col-4">One of two columns</div>
+        </div>
+    </div>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+            <div class="col-8">This div uses 8 columns</div>
+            <div class="col-4">This div uses 4 columns</div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-auto">Div auto adjusts to content</div>
+          <div class="col">Div spans available space </div>
+      </div>
+  </div><br>
+
+        <br>
+        <h3>Hello World!</h3>
+        <br>
+
+        <div class="container-fluid"> <br>
+
+          <p>I am a slightly longer paragraph than I probably should be.  I am taking up the entire width of
+          the page to demonstrate the difference between a container and a container-fluid class.  Bootstrap
+          will take care of the rest.</p> 
+        </div> <br>
+
+        <div class="container">
+          <div class="row">
+              <div class="col" style="border: 1px solid black">One of three columns</div>
+              <div class="col" style="border: 1px solid black">One of three columns</div>
+              <div class="col" style="border: 1px solid black">One of three columns</div>
+          </div>
+      </div>          
+        <br>
+
+        <div class="container">
+          <div class="row">
+              <div class="col">One of three columns</div>
+              <div class="col">One of three columns</div>
+              <div class="col">One of three columns</div>
+          </div>
+          <div class="row">
+              <div class="col">One of two columns</div>
+              <div class="col">One of two columns</div>
+          </div>
+          <div class="row">
+              <div class="col">One of five columns</div>
+              <div class="col">One of five columns</div>
+              <div class="col">One of five columns</div>
+              <div class="col">One of five columns</div>
+              <div class="col">One of five columns</div>
+          </div>
+      </div>
+        <br>
+
+        <div class="container">
+          <div class="row">
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+              <div class="col">One of thirteen columns</div>
+          </div>
+      </div>
+      
+
+        <br>
+    <br></body>
+</html>
+// **********
+@media (max-width: 576px) {body {background-color: lightblue;}}
+
+// Small devices known as the 'sm' breakpoint (landscape phones, 576px and up) 
+@media (min-width: 576px) { ... }
+
+// Medium devices known as the 'md' breakpoint (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices known as the 'lg' breakpoint (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices known as the 'xl' breakpoint (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+.row div {
+    border: 1px solid black;
+    background-color: lightseagreen;}
+
+// __________
+<html>
+  <head>
+    <title>My title</title>
+  </head>
+  <body>
+    <h3>A heading</h3>
+    <a href="#">Link text</a>
+  </bod
+// __________
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+
+    </title>
+  </head>
+  <!-- * // * ________________________________________________________________________________________________________________________________________________ * // * -->
+<body><br>
+
+  <div id='container'></div>
+  
+  <input id='message' />
+  <div id='output'></div>
+
+    <!-- Below is a "button" element with an "id" attribute.  -->
+    <button id="submitButton">Submit!</button><br>
+<br>
+    <form>
+      <input id="firstName" type="text"/>
+      <input id="lastName" type="text"/>
+      <input id="email" type="text"/>
+  </form><br>
+
+  <!-- Below are three list items  -->
+<li>apples</li>
+<li>oranges</li>
+<li>bananas</li><br>
+
+<p class="paragraph">I am a paragraph</p><br>
+
+<p id="paragraph">I am a paragraph</p><br>
+
+<p id="paragraph">I am a paragraph</p><br>
+
+<script src="script.js"></script>
+<br></body>  
+</html>
+// **********
+// Below the variable "myButton" is accessing the button element above by its "id"
+var myButton = document.getElementById("submitButton");
+
+var firstName = document.getElementById('firstName').value;
+var lastName = document.getElementById('lastName').value;
+var email = document.getElementById('email').value;
+
+// Below the variable fruit is accessing all tags of "li"
+var fruit = document.getElementsByTagName("li");
+
+var text = document.getElementsByClassName("paragraph");
+
+var text = document.getElementById("paragraph").innerHTML;
+
+var text = document.getElementById("paragraph").innerHTML;
+
+document.getElementById("paragraph").innerHTML = text + " and I am awesome!";
+
+var myButton = document.getElementById("submitButton");
+
+myButton.addEventListener("click", function(){alert("Click!!");})
+
+let container = document.getElementById('container');
+container.innerHTML = '<h3>Hello World!</h3>';
+
+let heading = document.createElement('h1'); // create the heading element
+heading.innerHTML = "Hello World!" // add text to the element
+
+let container = document.getElementById('container'); // select the element you want to insert into
+container.appendChild(heading);  // insert the heading into the container
+
+let heading = document.createElement('h1'); // create the heading
+heading.innerHTML = document.getElementById('message').value; // add the input value as text
+document.getElementById('output').appendChild(heading); // append the heading to the div element
+
+// __________
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">Hi! I'm a paragraph.</p>
+        <p id="p2">Hello! I'm another paragraph.</p>
+    </div>
+
+    <script>
+        var parentNode = document.getElementById("div1");
+        var childNode = document.getElementById("p1");
+        parentNode.removeChild(childNode);
+    </script>
+</body>
+
+</html>
+// __________
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addAChild()">Add a div element to the container!</button>
+    <div id="container"></div>
+    <script>
+        function addAChild() {
+            let newElem = document.createElement("div");
+            newElem.innerHTML = "This is a new Element created by appendChild()";
+            let container = document.getElementById("container");
+            container.appendChild(newElem);
+        }
+    </script>
+</body>
+
+</html>
+// __________
+{ "firstName": "John",
+  "lastName": "Smith",
+  "location": "Delaware",
+  "websites": [{"description": "work",
+                "URL": "https://www.JSONSMITH.com/"},
+
+              {"description": "videos",
+               "URL": "https://www.youtube.com"}],
+
+  "socialMedia": [{"description": "twitter",
+                   "link": "https://twitter.com"},
+
+                  {"description": "facebook",
+                   "link": "https://www.facebook.com/"},
+                   
+                  {"description": "github",
+                   "link": "https://github.com"}]}
+// __________
+
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("example").innerHTML = this.responseText;}};
+  xhttp.open("GET", "info.txt", true);
+  xhttp.send();}
+// __________
+import React    from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render
+    (React.createElement('div',{},React.createElement('h1', {className: 'flowers'}, 'Hello World!')),
+     document.getElementById('root')    );
+// __________
+ReactDOM.render(
+
+  React.createElement('div', {},
+
+    React.createElement('div', {},
+
+      React.createElement('span', {}, 'Hello')
+
+    )
+
+  ),
+
+  document.getElementById('root')
+
+);
+
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  React.createElement(
+    'ul',
+    {},
+    React.createElement('li', {}, 'Apples'),
+    React.createElement('li', {}, 'Oranges'),
+    React.createElement('li', {}, 'Mangos')
+  ),
+  document.getElementById('root')
+);
+// __________
+import React    from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render
+    (React.createElement('a', {href: 'http://google.com'}, 'Google it!'),
+     document.getElementById('root')
+    );
+// __________
+import React    from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render
+ (React.createElement
+   ('ul', {},
+    React.createElement
+     ('li', {},
+      'Apples',
+      React.createElement
+       ('ul', {},
+        React.createElement('li', {}, '$1.00 per lb')
+       )
+     ),
+
+    React.createElement
+     ('li', {},
+      'Oranges',
+      React.createElement
+       ('ul', {},
+        React.createElement('li', {}, '$.70 per lb')
+       )
+     ),
+
+    React.createElement
+     ('li', {},
+      'Mangos',
+      React.createElement('ul', {}, React.createElement('li', {}, '$2.00 per lb'))
+     )
+   ),
+  document.getElementById('root')
+ );
+// __________
+import React    from 'react';
+import ReactDOM from 'react-dom';
+
+const apples = React.createElement
+ ('ul', {},
+  React.createElement('li', {}, '$1.00 per lb')
+ );
+
+const oranges = React.createElement
+ ('ul', {},
+  React.createElement('li', {}, '$.70 per lb')
+ );
+
+const mangos = React.createElement
+ ('ul', {},
+  React.createElement('li', {}, '$2.00 per lb')
+ );
+
+ReactDOM.render
+ (React.createElement
+   ('ul', {},
+    React.createElement('li', {}, 'Apples', apples),
+    React.createElement('li', {}, 'Oranges', oranges),
+    React.createElement('li', {}, 'Mangos', mangos)
+   ),
+  document.getElementById('root')
+ );
+// __________
+import React    from 'react';
+import ReactDOM from 'react-dom';
+
+const applesitem = React.createElement('li', {}, '$1.00 per lb');
+const apples = React.createElement('ul', {}, applesitem);
+
+const orangesitem = React.createElement('li', {}, '$.70 per lb');
+const oranges = React.createElement('ul', {}, orangesitem);
+
+const mangositem = React.createElement('li', {}, '$2.00 per lb');
+const mangos = React.createElement('ul', {}, mangositem);
+
+ReactDOM.render
+ (React.createElement
+   ('ul', {},
+    React.createElement('li', {}, 'Apples', apples),
+    React.createElement('li', {}, 'Oranges', oranges),
+    React.createElement('li', {}, 'Mangos', mangos)
+   ),
+  document.getElementById('root')
+ );
+// __________
+ReactDOM.render(
+
+    React.createElement('div', {name: "div1"},
+  
+      React.createElement('div', {name: "div2"}),
+  
+      React.createElement('div', {name: "div3"}),
+  
+    ),
+  
+    document.getElementById('root')
+  
+  );
+  
+// __________
+
+const myLink = React.createElement('a', {href: "http://www.mywebsite.com"});
+
+const myHeader = React.createElement('h1', {}, 'My Link');
+
+const myDiv = React.createElement('div', {}, myHeader, myLink);
+
+ReactDOM.render(myDiv, document.getElementById('root'));
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  React.createElement(
+    'div',
+    { className: 'flower' },
+    React.createElement('h1', {}, 'Hello World!')
+  ),
+  document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  React.createElement(
+    'div',
+    { className: 'flower' },
+    React.createElement('h1', {}, 'Hello World!')
+  ),
+  document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <div className="flower">
+    <h3>Hello World!</h3>
+  </div>,
+  document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render
+    (React.createElement
+        ('ul', {},
+            React.createElement('li', {}, 'Apples'),
+            React.createElement('li', {}, 'Oranges'),
+            React.createElement('li', {}, 'Mangos')
+        ),
+        document.getElementById('root')
+    );
+// __________
+alert("it's alive");
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    <ul>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Mangos</li>
+    </ul>,
+    document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render
+    (<ul>
+        <li>Apples</li>
+        <ul>
+            <li>$1.00 per lb</li>
+        </ul>
+
+        <li>Oranges</li>
+        <ul>
+            <li>$.70 per lb</li>
+        </ul>
+
+        <li>Mangos</li>
+        <ul>
+            <li>$2.00 per lb</li>
+        </ul>
+     </ul>,
+        document.getElementById('root')
+    );
+// __________
+<ul>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Mangos</li>
+    </ul>
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    React.createElement(
+        'div',
+        {},
+        React.createElement('h1', { className: 'iAmAClassName' }, 'Hello World!')
+    ),
+    document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <div>
+    <h1 className="iAmAClassName">Hello World!</h3>
+  </div>,
+  document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    React.createElement(
+        'div',
+        {},
+        React.createElement('h1', { id: 'iAmAnId' }, 'Good Morning!')
+    ),
+    document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+    <div>
+        <h1 id="iAmAnId">Good Morning!</h3>
+    </div>,
+    document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  React.createElement(
+    'div',
+    {},
+    React.createElement('h1', { className: 'iAmAClassName' }, 'Hello World!')
+  ),
+  document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <div>
+    <h1 className="iAmAClassName">Hello World!</h3>
+  </div>,
+  document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  React.createElement(
+    'div',
+    {},
+    React.createElement('h1', { id: 'iAmAnId' }, 'Good Morning!')
+  ),
+  document.getElementById('root')
+);
+// __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <div>
+    <h1 id="iAmAnId">Good Morning!</h3>
+  </div>,
+  document.getElementById('root')
+);
+// __________
+
+const firstName = "Bob";
+
+const lastName = "Smith";
+
+const root = document.getElementById('root');
+
+ReactDOM.render(<div>{firstName} {lastName}</div>, root);
+
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const State = 'Apples';
+const Population = 'Oranges';
+const Capital = 'Mangos';
+
+ReactDOM.render(
+  <ul>
+    <li>{State}</li>
+    <li>{Population}</li>
+    <li>{Capital}</li>
+  </ul>,
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const State = 'Apples';
+const Stateitem = '$1.00 per lb';
+const Population = 'Oranges';
+const Populationitem = '$.70 per lb';
+const Capital = 'Mangos';
+const Capitalitem = '$2.00 per lb';
+
+ReactDOM.render(
+  <ul>
+    <li>{State}</li>
+    <ul>
+      <li>{Stateitem}</li>
+    </ul>
+    <li>{Population}</li>
+    <ul>
+      <li>{Populationitem}</li>
+    </ul>
+    <li>{Capital}</li>
+    <ul>
+      <li>{Capitalitem}</li>
+    </ul>
+  </ul>,
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const State = 'Apples';
+const Population = 'Oranges';
+const Capital = 'Mangos';
+
+ReactDOM.render(
+  <ul>
+    <li>{State}</li>
+    <li>{Population}</li>
+    <li>{Capital}</li>
+  </ul>,
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const State = 'Apples';
+const Stateitem = '$1.00 per lb';
+const Population = 'Oranges';
+const Populationitem = '$.70 per lb';
+const Capital = 'Mangos';
+const Capitalitem = '$2.00 per lb';
+
+ReactDOM.render(
+  <ul>
+    <li>{State}</li>
+    <ul>
+      <li>{Stateitem}</li>
+    </ul>
+    <li>{Population}</li>
+    <ul>
+      <li>{Populationitem}</li>
+    </ul>
+    <li>{Capital}</li>
+    <ul>
+      <li>{Capitalitem}</li>
+    </ul>
+  </ul>,
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const groceryList = (
+    <ul>
+      <li>Apples</li>
+      <li>Oranges</li>
+      <li>Mangos</li>
+    </ul>
+);
+
+ReactDOM.render(
+  groceryList,
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const groceryList = (
+    <ul>
+      <li>Apples</li>
+        <ul>
+          <li>$1.00 per lb</li>
+        </ul>
+      <li>Oranges</li>
+        <ul>
+          <li>$.70 per lb</li>
+        </ul>
+      <li>Mangos</li>
+        <ul>
+          <li>$2.00 per lb</li>
+        </ul>
+    </ul>
+);
+
+ReactDOM.render(
+  groceryList,
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const groceryList = (
+  <ul>
+    <li>Apples</li>
+    <ul>
+      <li>$1.00 per lb</li>
+    </ul>
+    <li>Oranges</li>
+    <ul>
+      <li>$.70 per lb</li>
+    </ul>
+    <li>Mangos</li>
+    <ul>
+      <li>$2.00 per lb</li>
+    </ul>
+  </ul>
+);
+
+ReactDOM.render(groceryList, document.getElementById('root'));
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function groceryList(State, Population, Capital) {
+  return (
+    <ul>
+      <li>{State}</li>
+      <li>{Population}</li>
+      <li>{Capital}</li>
+    </ul>
+  );
+}
+
+ReactDOM.render(
+  groceryList('Apples', 'Oranges', 'Mangos'),
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const groceryList = (State, Population, Capital) => {
+  return (
+    <ul>
+      <li>{State}</li>
+      <li>{Population}</li>
+      <li>{Capital}</li>
+    </ul>
+  );
+};
+
+ReactDOM.render(
+  groceryList('Apples', 'Oranges', 'Mangos'),
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+function groceryList(State, Stateitem, Population, Populationitem, Capital, Capitalitem) {
+  return (
+    <ul>
+      <li>{State}</li>
+      <ul>
+        <li>{Stateitem}</li>
+      </ul>
+      <li>{Population}</li>
+      <ul>
+        <li>{Populationitem}</li>
+      </ul>
+      <li>{Capital}</li>
+      <ul>
+        <li>{Capitalitem}</li>
+      </ul>
+    </ul>
+  );
+}
+
+ReactDOM.render(
+  groceryList(
+    'Apples',
+    '$1.00 per lb',
+    'Oranges',
+    '$.70 per lb',
+    'Mangos',
+    '$2.00 per lb'
+  ),
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const groceryList = (
+  State,
+  Stateitem,
+  Population,
+  Populationitem,
+  Capital,
+  Capitalitem
+) => {
+  return (
+    <ul>
+      <li>{State}</li>
+      <ul>
+        <li>{Stateitem}</li>
+      </ul>
+      <li>{Population}</li>
+      <ul>
+        <li>{Populationitem}</li>
+      </ul>
+      <li>{Capital}</li>
+      <ul>
+        <li>{Capitalitem}</li>
+      </ul>
+    </ul>
+  );
+};
+
+ReactDOM.render(
+  groceryList(
+    'Apples',
+    '$1.00 per lb',
+    'Oranges',
+    '$.70 per lb',
+    'Mangos',
+    '$2.00 per lb'
+  ),
+  document.getElementById('root')
+);
+// __________
+
+const firstName = "Bob";
+
+const lastName = "Smith";
+
+const fullName = (first, last) => { return firstName + " " + lastName }
+
+const name = (
+
+    <h3>
+
+        {fullName(firstName, lastName)}
+
+    </h3>
+
+);
+
+ReactDOM.render(name, document.getElementById('root'));
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const groceryList = (
+  item1,
+  item1Price,
+  item2,
+  item2Price,
+  item3,
+  item3Price
+) => {
+  return (
+    <ul>
+      <li>{item1}</li>
+      <ul>
+        <li>{item1Price}</li>
+      </ul>
+      <li>{item2}</li>
+      <ul>
+        <li>{item2Price}</li>
+      </ul>
+      <li>{item3}</li>
+      <ul>
+        <li>{item3Price}</li>
+      </ul>
+    </ul>
+  );
+};
+
+ReactDOM.render(
+  groceryList(
+    'Apples',
+    '$1.00 per lb',
+    'Oranges',
+    '$.70 per lb',
+    'Mangos',
+    '$2.00 per lb'
+  ),
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const groceryList = (item1, item2, item3) => {
+  return (
+    <ul>
+      <li>{item1}</li>
+      <li>{item2}</li>
+      <li>{item3}</li>
+    </ul>
+  );
+};
+
+ReactDOM.render(
+  groceryList('Apples', 'Oranges', 'Mangos'),
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+const groceryList = (item1, item2, item3) => {
+  return (
+    <ul>
+      <li>{item1}</li>
+      <li>{item2}</li>
+      <li>{item3}</li>
+    </ul>
+  );
+};
+
+ReactDOM.render(
+  <groceryList item1="Apples" item2="Oranges" item3="Mangos" />,
+  document.getElementById('root')
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const GroceryList = props => {
+  return (
+    <ul>
+      <li>{props.item1}</li>
+      <li>{props.item2}</li>
+      <li>{props.item3}</li>
+    </ul>
+  );
+};
+
+ReactDOM.render(
+  <GroceryList item1="Apples" item2="Oranges" item3="Mangos" />,
+  document.getElementById('root')
+);
+// __________
+
+const auto = props => {
+
+  return (
+
+    <div>{props.make}</div>
+
+    <div>{props.model}</div>
+
+  );
+
+};
+// __________
+
+const Auto = props => {
+
+  return (
+
+    <div>{props.make}</div>
+
+    <div>{props.model}</div>
+
+  );
+
+};
+
+
+
+ReactDOM.render(
+
+  <!- ***CODE GOES HERE *** ->
+
+  document.getElementById('root')
+
+);
+// __________
+
+const App = props => {
+
+  return (
+
+    <Title title="{props.appName}" />
+
+  );
+
+};
+
+
+
+const Title = props => (
+
+    <h1>{props.title}</h1>
+
+);
+
+
+
+ReactDOM.render(<App title="My Cool App" />, document.getElementById('root'));
+
+// __________
+const App = props => {
+  return(
+
+  )
+}
+
+ReactDOM.render(
+  <App/>,
+  document.getElementById('root');
+)
+// __________
+src/index.js file:
+
+const Hello = props => {
+  return (
+    <div>
+      <h1>Hello, {props.name}!</h1>
+    </div>
+  );
+};
+// __________
+src/index.js file:
+
+const Hello = props => (
+  <div>
+    <h1>Hello, {props.name}!</h1>
+  </div>
+);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  return (
+    <div>
+      <Hello name="Nikki" />
+      <Hello name="Michael" />
+      <Hello name="Andrew" />
+    </div>
+  );
+};
+
+const Hello = props => (
+  <div>
+    <h1>Hello, {props.name}!</h1>
+  </div>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+terminal/command line:
+
+npm install --save prop-types
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+// add the above line to your code
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+
+const App = props => {
+  return (
+    <Employee name="Elizabeth" age={27} position="Sales Manager"/>
+  )
+}
+
+const Employee = props => (
+    <ul>
+      <li>{props.name}</li>
+      <li>{props.age}</li>
+      <li>{props.position}</li>
+    </ul>
+  );
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+
+const App = props => {
+  return (
+    <Employee name="Elizabeth" age={27} position="Sales Manager"/>
+  )
+}
+
+const Employee = props => (
+    <ul>
+      <li>{props.name}</li>
+      <li>{props.age}</li>
+      <li>{props.position}</li>
+    </ul>
+);
+
+Employee.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+  position: PropTypes.string
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+src/index.js file:
+
+// ...
+
+Employee.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+  position: PropTypes.string
+};
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+
+const App = props => {
+  return (
+    <Employee name="Elizabeth" age={27}/>
+  )
+}
+
+const Employee = props => (
+  <ul>
+    <li>{props.name}</li>
+    <li>{props.age}</li>
+    <li>{props.position}</li>
+  </ul>
+);
+
+Employee.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+  position: PropTypes.string
+}
+
+Employee.defaultProps = {
+  position: "employee"
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+
+Person.propTypes = {
+
+  name: PropTypes.string.isRequired,
+
+  age: PropTypes.number
+
+}
+
+
+
+Person.defaultProps = {
+
+  age: 0
+
+}
+
+XXXXX
+
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+
+const App = props => {
+  const user = {
+    name: 'George Bailey',
+    address: '1122 Drafty House',
+    city: 'Bedford Falls',
+    state: 'New York',
+    zip: 13148
+  };
+  return <User person={user} items="Boots, Tie, Socks" amount={100} />;
+};
+
+const User = props => (
+  <ul>
+    <li>Name: {props.person.name}</li>
+    <ul>
+      <li>Address: {props.person.address}</li>
+      <li>City: {props.person.city}</li>
+      <li>State: {props.person.state}</li>
+      <li>Zip: {props.person.zip}</li>
+    </ul>
+    <li>Items: {props.items}</li>
+    <li>Paid: {String(props.paid)}</li>
+    <li>Amount: {props.amount}</li>
+    <li>Shipped: {String(props.shipped)}</li>
+  </ul>
+);
+
+User.propTypes = {
+  person: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+    zip: PropTypes.number.isRequired,
+  }),
+  items: PropTypes.string.isRequired,
+  paid: PropTypes.bool,
+  amount: PropTypes.number.isRequired,
+  shipped: PropTypes.bool
+};
+
+User.defaultProps = {
+  paid: false,
+  shipped: false
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  return <List items={listItems} />;
+};
+
+const items = ['Bread', 'Milk', 'Eggs', 'Tea'];
+
+const listItems = [];
+
+for (let i = 0; i < items.length; i++) {
+  listItems.push(<li key={i}>{items[i]}</li>);
+}
+
+const List = props => <ul>{props.items}</ul>;
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+src/index.js file:
+
+const items = ['Bread', 'Milk', 'Eggs', 'Tea'];
+
+const listItems = items.map(item => <li>{item}</li>);
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  const items = ['Bread', 'Milk', 'Eggs', 'Tea'];
+  return <List items={items} />;
+};
+
+const List = props => {
+  const listItems = props.items.map((item, index) => (
+    <li key={index}>{item}</li>
+  ));
+  return <ul>{listItems}</ul>;
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+const listItems = [
+  React.createElement('li', {}, 'Bread'),
+  React.createElement('li', {}, 'Milk'),
+  React.createElement('li', {}, 'Eggs'),
+  React.createElement('li', {}, 'Tea')
+];
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  const items = [
+    { name: 'Bread', price: 2.35 },
+    { name: 'Milk', price: 2.0 },
+    { name: 'Eggs', price: 3.15 },
+    { name: 'Tea', price: 4.0 }
+  ];
+
+  return <List items={items} />;
+};
+
+const List = props => {
+  const listItems = props.items.map((item, index) => (
+    <li key={index}>
+      {item.name}: {item.price}
+    </li>
+  ));
+
+  return <ul>{listItems}</ul>;
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+
+const observatory = "Lowell";
+
+
+
+const App = props => {
+
+  const planets = [{name: 'Earth'}, {name: 'Mars'}, {name: 'Venus'}];
+
+  return (
+
+    <div>
+
+      <h1>{props.page}</h1>
+
+      <div>{observatory}</div>
+
+      <List items={planets} />
+
+    </div>
+
+  );
+
+};
+
+
+
+const List = props => {
+
+  const listItems = props.items.map((item, index) => (
+
+    <li key={index}>{item.name}</li>
+
+  ));
+
+  return <ul>{listItems}</ul>;
+
+};
+
+
+
+ReactDOM.render(<App/>, document.getElementById('root'));
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  const items = [
+    { name: 'Bread', price: 2.35 },
+    { name: 'Milk', price: 2.0 },
+    { name: 'Eggs', price: 3.15 },
+    { name: 'Tea', price: 4.0 }
+  ];
+
+  return (
+    <div>
+      <List items={items} />
+      <Employee name="Elizabeth" age={27} position="Sales Manager" />
+      <GroceryList item1="Apples" item2="Oranges" item3="Mangos" />
+    </div>
+  );
+};
+
+const List = props => {
+  const listItems = props.items.map((item, index) => (
+    <li key={index}>
+      {item.name}: {item.price}
+    </li>
+  ));
+
+  return <ul>{listItems}</ul>;
+};
+
+const Employee = props => (
+  <ul>
+    <li>{props.name}</li>
+    <li>{props.age}</li>
+    <li>{props.position}</li>
+  </ul>
+);
+
+const GroceryList = props => (
+  <ul>
+    <li>{props.item1}</li>
+    <li>{props.item2}</li>
+    <li>{props.item3}</li>
+  </ul>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+Requirements
+Add the code for the following requirements within the src/index.js file.
+
+Step 1
+Create a component named App that returns the following array:
+const favoriteCars = ['Honda CR-V ', 'Toyota Highlander', 'Ford F-150', 'BMW X3', 'Subaru Crosstrek']
+Step 2
+Next, create a new component named List that maps over the following array and returns a numbered list of the array items.
+Step 3
+Lastly, include a ReactDOM.render() that renders the App component
+Hint! Return the data from the List component within the App component
+
+index.js file:
+
+import React    from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => 
+   {const favoriteCars = 
+       ['Honda CR-V ',
+        'Toyota Highlander',
+        'Ford F-150',
+        'BMW X3',
+        'Subaru Crosstrek'
+       ];
+    return <List favoriteCars={favoriteCars} />;
+   };
+
+const List = props => 
+   {const listCars = props.favoriteCars.map
+      ((car, index) => 
+       (<li key={index}>{car}</li>)
+      );
+    return <ul>{listCars}</ul>;
+   };
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Hello = props => {
+  return (
+    <div>
+      <h1>Hello, {props.name}!</h1>
+    </div>
+  );
+};
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Hello extends React.Component {
+  render() {}
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Hello extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, {props.name}!</h1>
+      </div>
+    );
+  }
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Hello extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, {this.props.name}!</h1>
+      </div>
+    );
+  }
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  return (
+    <div>
+      <Hello name="Nikki" />
+      <Hello name="Michael" />
+      <Hello name="Andrew" />
+    </div>
+  );
+};
+
+class Hello extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello, {this.props.name}!</h1>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+
+const App = props => {
+    return (
+        <Employee />
+    );
+}
+
+class Employee extends React.Component {
+  render() {
+      return (
+          <Person />
+      );
+  }
+}
+
+class Person extends React.Component {
+  render() {
+      return (
+          <div>Bob</div>
+      );
+  }
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      accountBalance: 25.00
+    };
+  }
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      accountBalance: 25.0
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+      </div>
+    );
+  }
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  return (
+    <div>
+      <BankAccount />
+    </div>
+  );
+};
+
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      accountBalance: 25.0
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+The state can contain many fields within it. For example, it can contain two separate accounts:
+
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      savings: {
+        accountBalance: 1125.00
+      },
+      checking: {
+        accountBalance: 530.64
+      }
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Savings Account Balance: ${this.state.savings.accountBalance}</h3>
+        <h3>Checking Account Balance: ${this.state.checking.accountBalance}</h3>
+      </div>
+    );
+  }
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  return <Text />;
+};
+
+class Text extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      text: 'Hello World!!'
+    };
+  
+  }
+  render() {
+    return <h1>{this.state.text}</h1>;
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+src/index.js file:
+
+class Text extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      text: 'Hello World!!'
+    };
+  }
+
+  update(event) {
+    this.setState({ text: event.target.value });
+  }
+
+  render() {
+    return (
+      <div>
+        <input type="text" onChange={this.update.bind(this)} />
+        <h1>{this.state.text}</h1>
+      </div>
+    );
+  }
+}
+// __________
+src/index.js file:
+
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      accountBalance: 2222.22
+    };
+  }
+
+  increment() {
+    this.setState({ accountBalance: this.state.accountBalance + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+        <button onClick={this.increment.bind(this)}>Increase Amount</button>
+      </div>
+    );
+  }
+}
+// __________
+src/index.js file:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = props => {
+  return <BankAccount />;
+};
+
+class BankAccount extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      accountBalance: 2222.22,
+      addAmount: 0
+    };
+  }
+
+  increment() {
+    this.setState({
+      accountBalance: this.state.accountBalance + parseInt(this.state.addAmount)
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>Account Balance: ${this.state.accountBalance}</h3>
+        <input
+          type="number"
+          onChange={event => this.setState({ addAmount: event.target.value })}
+          value={this.state.addAmount}
+        />
+        <button onClick={this.increment.bind(this)}>Increase Amount</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+
+class Widget extends React.Component {
+
+  constructor(props) {
+
+    super(props);
+
+    this.state = { name: 'Widget' };
+
+  }
+
+  update() {
+
+    this.setState({ name: event.target.value });
+
+  }
+
+  render() {
+
+    return (
+
+      <div>
+
+        Name:
+
+        <input type="text" onChange={this.update.bind(this)} />
+
+        <h1>{this.state.name}</h1>
+
+      </div>
+
+    );
+
+  }
+
+}
+// __________
+
+class Tax extends React.Component {
+
+  constructor(props) {
+
+    super(props);
+
+    this.state = { rate: 0, amount: 1000, taxAmount: 0 };
+
+  }
+
+  calculate(event) {
+
+      var newAmount = this.state.amount * this.state.rate;
+
+      this.setState({taxAmount: newAmount});
+
+  }
+
+  render() {
+
+    return (
+
+      <div>
+
+        <div>
+
+          Rate:
+
+          <input type="number" onChange={e => this.setState({rate: e.target.value})} />
+
+        </div>
+
+        <div>
+
+          <button onClick={this.calculate.bind(this)}>Calculate</button>
+
+        </div>
+
+        <div>
+
+          <h1>{this.state.taxAmount}</h1>
+
+        </div>
+
+      </div>
+
+    );
+
+  }
+
+}
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
+// __________
+
