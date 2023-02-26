@@ -1,6 +1,5 @@
-import React from 'react';
-import Header from '../components/Header';
+import React from "react";
 
-const About = () => <Header title="About" />;
+const About = () => (<div><h1>About</h1></div>);
 
 export default About;

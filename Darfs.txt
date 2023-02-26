@@ -90,7 +90,7 @@
       <link rel="stylesheet" href="index04.07.css">
  </head>
 
- <body><nav><ul><li><a href="home.html">Home</a></li>
+ <body><nav><ul><li><a href="Home.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
        </nav>
@@ -226,7 +226,7 @@ alert("Welcome to my page")
 // Boolean
 true
 
-var excited = "I am so excited to be learning about JavaScript!"
+var excited = "I am so excited to be learning About JavaScript!"
 
 var puppy;
 
@@ -239,7 +239,7 @@ puppy = "Spot";
 <html>
  <head><title>JavasScript 01</title></head>
 
- <body><script> var excited = "I am so excited to be learning about JavaScript!"
+ <body><script> var excited = "I am so excited to be learning About JavaScript!"
                 var puppy;
                 // later on in this code, you can set puppy to some data
                 puppy = "Spot";
@@ -4360,33 +4360,257 @@ class Tax extends React.Component {
 }
 
 // __________
+import React from 'react';
+
+const FavoriteThings = ({ match }) => (
+  <div>
+    <h3>{match.params.topicId}</h3>
+  </div>
+);
+
+export default FavoriteThings;
+
+//-----
+// __________
+import React from 'react';
+import Things from './Things';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const Things = ({ match }) => (
+  <div>
+    <h2>Things</h2>
+    <ul>
+      <li>
+        <Link to={`${match.url}/rendering`}>Rendering with React</Link>
+      </li>
+      <li>
+        <Link to={`${match.url}/components`}>Components</Link>
+      </li>
+      <li>
+        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+      </li>
+    </ul>
+
+    <Route path={`${match.url}/:topicId`} component={Topic} />
+    <Route
+      exact
+      path={match.url}
+      render={() => <h3>Please select a topic.</h3>}
+    />
+  </div>
+);
+
+export default Things;
+
+// __________
+import React          from 'react';
+import { render }     from 'react-dom';
+import Home           from './screens/Home';
+import About          from './screens/About';
+import FavoriteThings from './screens/FavoriteThings';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const App = () => (
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/">Home</Link>                        </li>
+        <li><Link to="/About">About</Link>                  </li>
+        <li><Link to="/FavoriteThings">FavoriteThings</Link></li>
+      </ul>
+
+      <Route path="/" component={Home} />
+      <Route path="/About" component={About} />
+      <Route path="/FavoriteThings" component={FavoriteThings} />
+    </div>
+  </Router>
+);
+
+render(<App />, document.getElementById('root'));
+// __________
+import React              from 'react';
+import { render }         from 'react-dom';
+import Home               from './screens/Home';
+import About              from './screens/About';
+import FavoriteThings     from './screens/FavoriteThings';
+
+const Index = ({ pathname }) => {
+    switch (pathname) {
+        case '/About':
+            return <About />;
+        case '/FavoriteThings':
+            return <FavoriteThings />;
+        default:
+            return <Home />;
+    }
+};
+
+let pathname = window.location.pathname;
+
+ReactDOM.render(<Index pathname={pathname} />, document.getElementById('root'));
+
+window.addEventListener('popstate', () => {
+    pathname = window.location.pathname;
+});
+
+render(<App />, document.getElementById('root'));
 
 // __________
 
-// __________
+// Lesson 06 //
 
 // __________
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = { comment: "Hi" };
+    }
+
+    changeComment() {
+        // Wrong
+        this.state.comment = 'Hello';
+
+        // Correct
+        this.setState({ comment: 'Hello' });
+    }
+
+    render() {
+        return (
+            <div>
+                <h2>{this.state.comment}</h2>
+                <button onClick={this.changeComment.bind(this)}>Change To Hello</button>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+// __________
+function travel(props){props.distance -= props.speed;}
+
+let trip = {distance: 20, speed: 5};
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
 
 // __________
+function travel(props) { return props.distance - props.speed;}
+
+let trip = {distance: 20, speed: 5};
+
+trip= {distance: travel(trip), speed: 5};
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
+
+travel(trip);
+console.log(trip);
 
 // __________
+const obj = {
+    first: 'April',
+    last: 'Ludgate'
+};
+
+
+const { first: f, last: l } = obj;
+
+console.log(l);
+// Will log Ludgate
+
+console.log(f);
+// Will log April
 
 // __________
+import ReactDOM from 'react-dom';
+import React from 'react';
+
+
+ReactDOM.render(<h1>Hello, World!</h1>, document.getElementById('root'));
+// __________
+import {render} from 'react-dom';
+import React from 'react';
+
+render(<h1>Hello, World!</h1>, document.getElementById('root'));
+// __________
+const array = ['a', 'b'];
+
+const [x, y] = array;
+
+console.log(x);
+console.log(y);
 
 // __________
+Intro to Redux
+ES6 Concepts Review - Spread Operator
 
+const parameters = [4, 8, 2, 1, 6];
+
+const maxWithoutSpread = Math.max(
+    parameters[0],
+    parameters[1],
+    parameters[2],
+    parameters[3],
+    parameters[4]
+); // Returns 8
+console.log(maxWithoutSpread);
+
+const maxUsingSpread = Math.max(...parameters, 9, -2); // Returns 8
+console.log(maxUsingSpread);
+
+const someNummbers = [5, 9, 21, 2];
+const newNumbers = [17, ...someNummbers, 74];
+console.log(someNummbers);
+console.log(newNumbers);
+
+const person = {
+    name: 'Jess',
+    age: 42
+}
+
+const newPerson = {...person, name: 'Tyler'};
+console.log(newPerson);
 // __________
+Intro to Redux
+ES6 Concepts Review - Filter:
 
-// __________
+function isEnough(value) {
+    return value >= 10;
+}
 
-// __________
+const filtered = [12, 5, 8, 130, 44].filter(isEnough);
+console.log(filtered);
+  // filtered is equal to [12, 130, 44]
 
-// __________
+  //-------------
 
-// __________
-
-// __________
-
+const filtered = [12, 5, 8, 130, 44].filter(value => value >= 10);
+console.log(filtered);
+  // filtered is equal to [12, 130, 44]
 // __________
 
 // __________
